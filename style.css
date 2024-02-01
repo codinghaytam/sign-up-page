@@ -1,3 +1,112 @@
-body{
-    background: url("./images/Untitled.svg");
+:root{
+    --radius : 12px;
+    --width-of-window: clamp(50px,100px,80%);
+    --sidebar-width: min(30%,200px);
+    --height-of-window: 100%;
+    --logo-font: clamp(15px,20px,25px);
 }
+@font-face {
+    font-family: "nord";
+    src: url("./fonts/Norse-Bold\ \(1\).otf");
+}
+li{
+    list-style:none ;
+    margin: 20px;
+}
+body{
+    background: no-repeat url("./images/Untitled.svg");
+    background-size: cover ;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}   
+body > div{
+    display: flex;
+    padding: 10px;
+}
+.sidebar{
+    background: no-repeat url("./images/Sky-background.svg") center;
+    background-size: cover;
+    display: flex;
+    height: var(--height-of-window);
+    width: var(--sidebar-width);
+    border-bottom-left-radius: var(--radius);
+    border-top-left-radius: var(--radius);
+    justify-content: center;
+    min-width: 150px;
+}
+body > h1{
+    font-family: "nord";
+    font-size: 50px;
+}
+
+.logo {
+
+    width: 100%;
+    padding:15px;
+    margin-top: 50px;
+    height:70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    opacity: 0.7;
+    height: 5em;
+}
+.logo img{
+    width: 3em;
+    margin-top: 20px;
+    opacity: 1;
+}
+.logo h1{
+    font-size: var(--logo-font);
+    color: white;
+    font-family: "nord",sans-serif;
+    margin-bottom: 20px;
+}
+fieldset{
+    display: flex;
+    background-color: white;
+    margin-left: 0px;
+    border: hidden;
+    border-top-right-radius: var(--radius) ;
+    border-bottom-right-radius: var(--radius);
+    height: calc(var(--height-of-window) - 1rem);
+    width: var(--width-of-window);
+}
+button{
+    height: 50px;
+    align-self: flex-end;
+    width: 150px;
+    border-radius: var(--radius);
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 1vh;
+}
+input{
+    border-radius: 8px;
+    padding: 10px;
+    font-size: 20px;
+    border: solid 3px;
+    width: max(10em,80px);
+
+}
+
+label{
+    text-transform: uppercase;
+    font-family: "nord";
+    font-size: 20px;
+}
+ul{
+    margin: 0px -10px;
+}
+p,a{
+    font-size: clamp(10px,20px,60px);
+    color: white;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+
