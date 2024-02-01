@@ -143,6 +143,9 @@ a:link{
 #gmail:invalid{
     border-color: red;
 }
+#password:invalid{
+    border-color: red;
+}
 input:focus{
     border: solid black;
 }
