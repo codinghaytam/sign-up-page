@@ -5,43 +5,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sign up page</title>
     <link rel="stylesheet" href="./style.css">
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
 </head>
 <body>
     <h1>sign up</h1>
-    <form action="" method="get">
-        <fieldset>
-            <ul>
-                <li>
-                    <label for="first-name">first name</label>
-                    <input type="text" id="first-name">
-                </li>
-                <li>
-                    <label for="gmail">email</label>
-                    <input type="email" id="gmail">
-                </li>
-                <li>
-                    <label for="password">password</label>
-                    <input type="password" id="password">
-                </li>
-            </ul>
+    <div>
+        <div>
+            <img src="./images/Sky-background.svg" alt="nigthsky">
+            <img src="./images/odin-lined.png" alt="odinprojectlogo">
+            <h1>odin project</h1>
+        </div>
+        <form action="" method="get">
+            <fieldset>
+                <ul>
+                    <li>
+                        <label for="first-name">first name</label>
+                        <input type="text" id="first-name">
+                    </li>
+                    <li>
+                        <label for="gmail">email</label>
+                        <input type="email" id="gmail" required>
+                    </li>
+                    <li>
+                        <label for="password">password</label>
+                        <input type="password" id="password" required>
+                    </li>
+                </ul>
         
-            <ul>
-                <li>
-                    <label for="last-name">last name</label>
-                    <input type="text" id="last-name">
-                </li>
-                <li>
-                    <label for="phone">phone number</label>
-                    <input type="number" pattern="\d{10}" id="phone">
-                </li>
-                <li>
-                    <label for="confirm-password">confirm password</label>
-                    <input type="password" id="confirm-password">
-                </li>
-            </ul>
-                
-        </fieldset>
-    </form>
+                <ul>
+                    <li>
+                        <label for="last-name">last name</label>
+                        <input type="text" id="last-name">
+                    </li>
+                    <li>
+                        <label for="phone">phone number</label>
+                        <input type="number"  id="phone" maxlength="10">
+                    </li>
+                    <li>
+                        <label for="confirm-password">confirm password</label>
+                        <input type="password" id="confirm-password" required>
+                    </li>
+                </ul>
+                <button type="submit" id="sign" disabled> submit</button>
+            </fieldset>
+            <p>Already have an account</p>
+            <a href="">log in</a>
+        </form>
+    </div>
 </body>
 </html>
