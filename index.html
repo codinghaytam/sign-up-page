@@ -4,8 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sign up page</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
 </head>
 <body>
-    
+    <h1>sign up</h1>
+    <div>
+        <fieldset>
+            <ul>
+                <li>
+                    <label for="first-name">first name</label>
+                    <input type="text" id="first-name">
+                </li>
+                <li>
+                    <label for="gmail">email</label>
+                    <input type="email" id="gmail">
+                </li>
+                <li>
+                    <label for="password">password</label>
+                    <input type="password" id="password">
+                </li>
+            </ul>
+            
+            <ul>
+                <li>
+                    <label for="last-name">last name</label>
+                    <input type="text" id="last-name">
+                </li>
+                <li>
+                    <label for="phone">phone number</label>
+                    <input type="number" pattern="\d{10}" id="phone">
+                </li>
+                <li>
+                    <label for="confirm-password">confirm password</label>
+                    <input type="password" id="confirm-password">
+                </li>
+            </ul>
+        </fieldset>
+    </div>
 </body>
 </html>
